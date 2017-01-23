@@ -1,0 +1,645 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>this is a test</title>
+		<style>
+			*{
+				font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+				font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+				padding:0px;
+				margin:0px;
+			}
+			body{
+				width:auto;
+				height:auto;
+				display:block;
+				
+			}
+			/*site-nave start*/
+			#site-nave{
+				position:relative;
+				width: auto;
+				height: 26px;
+				background:#f2f2f2;
+				margin:0 auto;
+				padding-left:100px;
+				z-index:998;
+			}
+			.sn-welcome{
+				width:25%;
+				position:relative;
+				padding:4px;
+				display:block;
+				overflow:hidden;
+				z-index:998;
+				
+			}
+			
+			a,a:hover{
+				text-decoration:none;
+			}
+			a:hover{
+				color:red;
+			}
+			a{
+				color:#999;
+				text-decoration:none;
+				padding:0 10px;
+			}
+			.sn-menu{
+				display:block;
+				position:absolute;
+				right:100px;
+				
+			}
+			.sn-mytaobao{
+				border: solid #eee;
+			    border-width: 0 1px 1px;
+				
+			}
+			ul{
+				list-style:none;
+				display:block;
+				position:absolute;
+				top:0;
+				right:0;
+				height:35px;
+				line-height:35px;
+				
+			}
+			li{
+				padding:4px 10px;
+				list-style:none;
+				float:left;
+				
+				
+			}
+			
+			.menu-bd{
+				background:#fff;
+				display:none;
+			    height:auto;
+				
+			}
+			.menu-bd-a{
+				line-height:30px;
+			}
+			.sn-menu-nav{
+				position:absolute;
+				width:982px;
+				height:300px;
+				top:25px;
+				right:0px;
+				background:#fff;
+				box-shadow:0px 1px 20px 1px #888888;
+				border-top:0px;
+				line-height: 1.4;
+				display:none;
+				
+			}
+			.menu-nav-li{
+				position:relative;
+				z-index:999;
+			}
+			.site-hot{
+				width:275px;
+				padding:10px;
+				left:10px;
+				top:16px;
+				position:relative;
+			}
+			.site-market{
+				width: 275px;
+				padding: 10px;
+				left: 300px;
+				top: -224px;
+				position: relative;
+				
+			}
+			.site-brand{
+				width: 275px;
+				padding: 10px;
+				left: 580px;
+				top: -468px;
+				position: relative;
+			}
+			.site-hot h2{
+				font-size:16px;
+				color:#f56a00;
+				padding-bottom: 15px;
+			}
+			.site-market h2{
+				font-size:16px;
+				color:#2263d4;
+				padding-bottom: 15px;
+			}
+			.site-brand h2{
+				font-size:16px;
+				color:#000;
+				padding-bottom: 15px;
+			}
+			.site-hot ul{
+				position:relative;
+				top: 0px;
+				left: 0px;
+			}
+			.site-market ul{
+				position:relative;
+				top:0px;
+				left:0px;
+			}
+			.site-brand ul{
+				position:relative;
+				top:0px;
+				left:0px;
+			}
+			.site-hot-list,.site-market-list,.site-brand-list{
+				float:left;
+				border-right:1px solid #eee;
+				height:200px;
+
+			}
+			.site-hot-list li,.site-market-list li,.site-brand-list li{
+				padding: 2px 0px;
+				width: 80px;
+				height: 36px;
+			}
+			.site-hot-list li a{
+				color:#000;
+			}
+			.site-market-list li a,site-brand-list li a{
+				color:#000;
+			}
+			.site-hot li a:hover{
+				color:#f56a00
+			}
+			.site-market li a:hover{
+				color:#2263d4;
+			}
+			.site-brand li a:hover{
+				color:#000;
+			}
+			
+			
+			
+			/*icontfont start*/
+			
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1485080802659'); /* IE9*/
+  src: url('iconfont.eot?t=1485080802659#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1485080802659') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1485080802659') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1485080802659#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:12px;
+  font-style:normal;
+  color:red;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-erweima:before { content: "\e602"; }
+
+.icon-gouwuche1:before { content: "\e632"; }
+
+.icon-gouwuche:before { content: "\e607"; }
+
+.icon-shouji:before { content: "\e737"; }
+
+.icon-qian:before { content: "\e68a"; }
+
+.icon-top:before { content: "\e62c"; }
+
+.icon-wujiaoxingkong:before { content: "\e623"; }
+
+.icon-shoptmall:before { content: "\e616"; }
+
+.icon-liulanjilu:before { content: "\e614"; }
+
+.icon-shangchengicon22:before { content: "\e615"; }
+
+.icon-chongzhi:before { content: "\e605"; }
+
+.icon-h-copy:before { content: "\e601"; }
+
+.icon-xin:before { content: "\e600"; }
+
+
+		
+/*end iconfont*/	
+
+			.restyle1{
+				position:relative;
+				top:-9px;
+				left:-12px;
+			    background-position: -37px 0;
+			}
+			.restyle2{
+				position:relative;
+				top: -10px;
+				left: -11px;
+			    background-position: -37px 0;
+			}
+			.restyle3{
+				color:#fff;
+			}
+			.icon-hot{
+				
+				color:#f56a00;
+				
+			}
+			.icon-new{
+				color:green;
+			}
+		/*end site-nave*/
+
+		/*fixRight start*/
+		.fixRight{
+			position:fixed;
+			width:35px;
+			height:100%;
+			right:0px;
+			background:#000;
+			z-index:999;
+		}
+		.fixRight-list{
+			top:200px;	
+		}
+		.fixRight ul li,.qrcode,.fixRight-toTop{
+			position:relative;
+			width:100%;
+			left:0px;
+			padding:6px;
+			border-bottom:1px solid #eee;
+		}
+		.fixRight ul li:hover{
+			background:#C40000;
+		}
+		.qrcode:hover,.fixRight-toTop:hover{
+			background:#C40000;
+		}
+		.fixRight ul li a,.fixRight-bottom div a{
+			padding:0 1px;
+		}
+		.fixRight-word{
+			color:white;
+			padding:3px;	
+		}
+		.fixRight-bottom{
+			position:relative;
+			top:85vh;
+		}
+		/*end fixRight*/
+
+		/*mainSearch start*/
+		.mainSearch{
+			width:100%;
+			height:130px;
+			
+		}
+		.ms-search{
+			width:36%;
+			margin:0 auto;
+			padding-top:50px;
+			
+		}
+		input{
+			text-decoration:none;
+			outline:none;
+		}
+		.ms-input{
+			width:80%;
+			height:35px;
+			border:2px solid #C40000;
+		}
+		.ms-button{
+			width:18%;
+			height:39px;
+			border:2px solid #C40000;
+			margin-left:-6px;
+			background:#C40000;
+			outline:none;	
+			font-size:18px;
+		}
+		.ms-button h2{
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: 5px;
+			
+			color:white;
+		}
+		/*end mainSearch*/
+
+		/*mainContent start*/
+		.mainContent{
+			width:100%;
+			height:35px;
+			background:#DD2727;
+			float:left;
+			
+		}
+		.contentSpace{
+			position:relative;
+			width:10px;
+			height:auto;
+			float:left;
+			background:#DD2727;
+		}
+		.contentNav{
+			position:relative;
+			width:15%;
+			height:35px;
+			background:#C60A0A;
+			float:left;
+		}
+		.contentNav p{
+			width:100%;
+			font-size:18px;
+			color:white;
+			text-align:center;
+			padding: 3px 15px;
+		}
+		.contentNav-list{
+			position:relative;
+			width:100%;
+			height:500px;;
+			top:2px;
+			background:#f2f2f2;
+			
+		}
+		.contentNav-list li{
+			padding-left:25px;
+			width:100%;
+			font-size:14px;
+			color:#000;
+		}
+		.contentNav-list li a{
+			width:255px;
+			height:100%;
+			
+		}
+		
+		.contentNav-list li:hover{
+			color:#C60A0A;
+			background:white;
+			font-weight:bold;
+			cursor:pointer;
+		}
+		.contentSelect{
+			position:relative;
+			top:0px;
+			width:80%;
+			height:35px;
+			background:#DD2727;
+			float:left;
+			
+		}
+		.contentSelect li{
+			padding-left:0px;
+		}
+		.contentSelect li a{
+			font-size:18px;
+			color:white;
+		}
+		.contentSelect li a:hover{
+			color:#C60A0A;
+		}
+		/*end mainContent*/
+		</style>
+	</head>
+	<body>
+		<!--site-nave start-->
+		<div id="site-nave">
+			<p class="sn-welcome">
+				<em>喵，欢迎来天猫</em>
+				<a href="http://www.baidu.com" target="_top">请登录</a>
+				<a href="http://www.tmall.com" target="_top">免费注册</a>
+			</p>
+			<ul class="sn-menu">
+				<li class="sn-mytaobao" onmouseover="mtbMouseOver()"  onmouseout="mtbMouseOut()" id="sn-mytaobao">
+					<a href="" targer="_top">我的淘宝</a>
+					<div class="menu-bd" id="menu-bd">
+						<div class="menu-bd-a"><a href="" target="_top">已买到的宝贝</a></div>
+						<div class="menu-bd-a"><a href="" target="_top">已卖出的宝贝</a></div>
+					</div>
+					
+				</li>
+				<li>
+					<i class="iconfont">&#xe600;</i>
+					<a href="" target="_top">我关注的品牌</a>
+				</li>
+				<li>
+					<i class="iconfont">&#xe607;</i>
+					<a href="" target="_top">购物车</a>
+				</li>
+				<li>
+					<a href="" target="_top">收藏夹</a>
+				</li>
+				<li>
+					<i class="iconfont">&#xe737;</i>
+					<a href="" target="_top">手机版</a>
+				</li>
+				<li>
+					<a href="" target="_top">淘宝网</a>
+				</li>
+				<li>
+					<a href="" target="_top">企业购</a>
+				</li>
+				<li>
+					<a href="" target="_top">商家支持</a>
+				</li>
+				<li onmouseover="menuMouseOver()"  onmouseout="menuMouseOut()" class="menu-nav-li">
+					<a href="" target="_top" id="web-nav">网站导航</a>
+					<!--menu-nav start-->
+		<div class="sn-menu-nav" id="sn-menu-nav">
+			
+			<div class="site-hot">
+				<h2>
+					热点推荐
+					<span>Hot</span>
+				</h2>
+				<ul class="site-hot-list">
+					<li><a href="" target="_top">天猫超市</a></li>
+					<li><a href="" target="_top">喵鲜生</a></li>
+					<li><a href="" target="_top">科技新品</a><i class="iconfont restyle2 icon-new">&#xe615;</i></li>
+					<li><a href="" target="_top">女装新品</a></li>
+					<li><a href="" target="_top">酷玩街</a></li>
+					<li><a href="" target="_top">内衣新品</a><i class="iconfont restyle2 icon-hot" >&#xe601;</i></li>
+					<li><a href="" target="_top">试没装</a></li>
+					<li><a href="" target="_top">运动新品</a></li>
+					<li><a href="" target="_top">时尚先生</a><i class="iconfont restyle2  icon-hot">&#xe601;</i></li>
+					<li><a href="" target="_top">精明妈咪</a><i class="iconfont restyle2 icon-new">&#xe615;</i></li>
+					<li><a href="" target="_top">吃了会</a></li>
+					<li><a href="" target="_top">企业采购</a></li>
+					<li><a href="" target="_top">会员积分</a></li>
+					<li><a href="" target="_top">天猫国际</a><i class="iconfont restyle2  icon-hot">&#xe601;</i></li>
+				</ul>
+			</div>	
+			
+			<div class="site-market">
+				<h2>
+					行业市场
+					<span>Market</span>
+				</h2>
+				<ul class="site-market-list">
+					<li><a href="" target="_top">美妆</a></li>
+					<li><a href="" target="_top">电器</a><i class="iconfont restyle1  icon-hot">&#xe601;</i></li>
+					<li><a href="" target="_top">女装</a></li>
+					<li><a href="" target="_top">男装</a></li>
+					<li><a href="" target="_top">女鞋</a></li>
+					<li><a href="" target="_top">男鞋</a></li>
+					<li><a href="" target="_top">内衣</a></li>
+					<li><a href="" target="_top">箱包</a><i class="iconfont restyle1 icon-new">&#xe615;</i></li>
+					<li><a href="" target="_top">运动</a></li>
+					<li><a href="" target="_top">母婴</a></li>
+					<li><a href="" target="_top">家装</a></li>
+					<li><a href="" target="_top">医疗</a></li>
+					<li><a href="" target="_top">食品</a><i class="iconfont restyle1 icon-new">&#xe615;</i></li>
+					<li><a href="" target="_top">配饰</a></li>
+					<li><a href="" target="_top">汽车</a><i class="iconfont restyle1  icon-hot">&#xe601;</i></li>
+				</ul>
+			</div>
+
+			<div class="site-brand">
+				<h2>
+					品牌风尚 Brand
+				</h2>
+				<ul class="site-brand-list">
+					<li><a href="" target="_top">尚天猫</a></li>
+					<li><a href="" target="_top">大牌街</a></li>
+					<li><a href="" target="_top">潮牌街</a></li>
+					<li><a href="" target="_top">天猫原创</a></li>
+					<li><a href="" target="_top">什么牌子好</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--end menu-nave-->
+				</li>
+			</ul>
+		</div>	
+		<!--end site-nave-->
+		
+		<!--fixRight start-->
+		<div class="fixRight">
+			<ul class="fixRight-list">
+				<li>
+					<a href="" target="_top"><i class="iconfont restyle3">&#xe616;</i></a>
+				</li>
+				<li>
+					<a href="" target="_top">
+						<i class="iconfont restyle3">&#xe632;</i>
+						<div class="fixRight-word">
+							购
+						</div>
+						<div class="fixRight-word">
+							物
+						</div>
+						<div class="fixRight-word">
+							车
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="" target="_top">
+						<i class="iconfont restyle3">&#xe68a;</i>
+					</a>
+				</li>
+				<li>
+					<a href="" target="_top">
+						<i class="iconfont restyle3">&#xe600;</i>
+					</a>
+				</li>
+				<li>
+					<a href="" target="_top"><i class="iconfont restyle3">&#xe623;</i></a>
+				</li>
+				<li>
+					<a href="" target="_top"><i class="iconfont restyle3">&#xe614;</i></a>
+				</li>
+			</ul>
+			<div class="fixRight-bottom">
+				<div class="qrcode">
+					<a href="" target="_top"><i class="iconfont restyle3">&#xe602;</i></a>
+				</div>
+				<div class="fixRight-toTop">
+					<a href="" target="_top"><i class="iconfont restyle3">&#xe62c;</i></a>
+				</div>
+			</div>
+		</div>
+		<!--end fixRight-->
+
+		<!--mainSearch start-->
+		<div class="mainSearch">
+			<div class="ms-search">
+				<input type="text" class="ms-input"/>
+				<button class="ms-button"><h2>搜索</h2></button>
+			</div>
+		</div>
+		<!--end mainSearch-->
+
+		<!--mainContent start-->
+		<div class="mainContent">
+			<div class="contentSpace">
+
+			</div>
+			<div class="contentNav">
+				<p>商品分类</p>
+				<ul class="contentNav-list">
+					<li>男鞋/运动户外</li>
+					<li>女鞋/男鞋/箱包</li>
+					<li>化妆品/个人助理</li>
+					<li>手机/数码/电脑办公</li>
+					<li>母婴玩具</li>
+					<li>零食/进口食品/茶酒</li>
+					<li>大家电/生活电器</li>
+					<li>家具建材</li>
+					<li>汽车/配件/用品</li>
+					<li>/家饰/鲜花饼</li>
+					<li>医药保健</li>
+					<li>厨具/收纳/宠物</li>
+					<li>图书音像</li>
+				</ul>
+			</div>
+			<ul class="contentSelect">
+					<li><a href="" target="_top">天猫超市</a></li>
+					<li><a href="" target="_top">天猫国际</a></li>
+					<li><a href="" target="_top">天猫会员</a></li>
+					<li><a href="" target="_top">品牌街</a></li>
+					<li><a href="" target="_top">电器城</a></li>
+					<li><a href="" target="_top">喵鲜生</a></li>
+					<li><a href="" target="_top">医药馆</a></li>
+					<li><a href="" target="_top">营业厅</a></li>
+					<li><a href="" target="_top">魅力惠</a></li>
+					<li><a href="" target="_top">飞猪旅行</a></li>
+					<li><a href="" target="_top">苏宁易购</a></li>
+			</ul>
+		</div>
+		<!--end mainContent-->
+	</body>
+	<script>
+		//我的淘宝鼠标移动到上面
+		function mtbMouseOver(){
+			document.getElementById("sn-mytaobao").style.backgroundColor = "#fff";
+			document.getElementById("menu-bd").style.display = "block";
+		}
+		//我的淘宝鼠标离开
+		function mtbMouseOut(){
+			document.getElementById("sn-mytaobao").style.backgroundColor = "#f2f2f2";
+			document.getElementById("menu-bd").style.display = "none";
+		}
+		//网站导航鼠标移动到上面
+		function menuMouseOver(){
+			document.getElementById("web-nav").style.backgroundColor = "#fff";
+			document.getElementById("sn-menu-nav").style.display = "block";
+		}
+		//网站导航鼠标离开
+		function menuMouseOut(){
+			document.getElementById("web-nav").style.backgroundColor="#f2f2f2";
+			document.getElementById("sn-menu-nav").style.display = "none";
+		}
+	</script>
+</html>
